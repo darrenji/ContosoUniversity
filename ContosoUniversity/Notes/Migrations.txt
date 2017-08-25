@@ -1,0 +1,9 @@
+﻿首先，要安装一个组件，是在.csproj中设置的。
+
+在appsettings.json中配置了一个新的数据库。
+
+打开命令行工具，有一个技巧，在文件浏览窗口地址上输入cmd
+
+添加迁移文件，输入：dotnet migrations add InitialCreate，产生一条migration文件，以及产生一个数据库快照
+
+添加或更新数据库，输入：dotnet ef database update，在产生的数据库中会有一个_EFMigrationsHistory的表，用于记录所有迁移

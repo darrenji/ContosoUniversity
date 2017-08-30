@@ -45,7 +45,7 @@
                     <tr>
                         @{
                             int cnt = 0;
-                            List<ContosoUniversity.Models.SchoolViewModels.AssignedCourseData> courses = ViewBag.Courses;
+                            List<ContosoUniversity.Models.SchoolViewModels.AssignedCourseData> courses = (List<ContosoUniversity.Models.SchoolViewModels.AssignedCourseData>)ViewData["Courses"];
 
                             foreach (var course in courses)
                             {
